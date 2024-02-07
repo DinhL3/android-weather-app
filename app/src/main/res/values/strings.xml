@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">weather-app-layout</string>
+    <string name="overcast">Overcast</string>
+    <string name="feels_like_6_c">Feels like -6°C</string>
+    <string name="forecast">Forecast</string>
+    <string name="return_button">Return</string>
+</resources>

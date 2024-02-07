@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">weather-app-layout</string>
+    <string name="overcast">pilvinen</string>
+    <string name="feels_like_6_c">Tuntuu kuin -6°C</string>
+    <string name="return_button">Palata</string>
+    <string name="forecast">Ennuste</string>
+</resources>
