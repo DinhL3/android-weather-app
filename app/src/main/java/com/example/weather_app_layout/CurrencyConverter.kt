@@ -75,7 +75,23 @@ fun CurrencyConverter() {
             }
         }
 
-        Button(onClick = {}) { Text("Convert") }
+        Button(onClick = {
+            val amount = eurAmount.toFloatOrNull()
+            if (amount != null) {
+                val rate = exchangeRates[selectedCurrency]
+                if (rate != null) {
+                    convertedAmount = (amount * rate).toString()
+                }
+            }
+        }) { Text("Convert") }
+
+        //display text x EUR = y USD, but only display after the button is clicked
+        if (convertedAmount.isNotEmpty()) {
+            Text(
+                text = "$eurAmount EUR = $convertedAmount $selectedCurrency",
+                color = Color.Blue
+            )
+        }
     }
 }
 
